@@ -1,0 +1,108 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.album {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.album h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .media-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+
+.media {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+  /* Maintain a 1:1 aspect ratio */
+}
+
+.media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.media-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.media-actions button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.media-actions button i {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+}
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup.show {
+  opacity: 1;
+}
