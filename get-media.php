@@ -1,7 +1,7 @@
 <?php
 $directory = 'photos'; // Update with your actual directory path
 
-// Function to retrieve the list of photos and videos from the directory
+// Function to retrieve the list of photos from the directory
 function getMediaFromDirectory($directory) {
   $media = [];
   if (is_dir($directory)) {
@@ -23,12 +23,12 @@ function getMediaFromDirectory($directory) {
 
 // Function to check if a file has a media extension
 function isMedia($file) {
-  $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'mp4', 'mov', 'avi'];
+  $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
   $extension = pathinfo($file, PATHINFO_EXTENSION);
   return in_array($extension, $allowedExtensions);
 }
 
-// Retrieve the media (photos and videos) from the directory
+// Retrieve the media (photos) from the directory
 $media = getMediaFromDirectory($directory);
 
 // Return the media as JSON
