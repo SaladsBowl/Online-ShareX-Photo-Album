@@ -17,5 +17,5 @@ I welcome anyone who wants to make this better, I spent maybe an hour and a half
 
 ## Authors
 
-- [@SaladGFL](https://www.github.com/SaladGFL)
+- [@SaladsBowl](https://www.github.com/SaladsBowl)
 
