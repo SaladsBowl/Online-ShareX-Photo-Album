@@ -1,5 +1,5 @@
 # Online ShareX Photo Album
-**A (pretty shit) online photo album for viewing your ShareX uploads**
+**An online photo album for viewing your ShareX uploads**
 
 
 ## Overview
@@ -7,7 +7,7 @@ Ever wanted a way to view your ShareX uploads all in one place on the internet? 
 - Coded with HTML, CSS, JS, and PHP
 - Features a download and share link button (WOW!)
 
-I welcome anyone who wants to make this better, I spent maybe an hour and a half on it and it blows.
+I welcome anyone who wants to make this better, I spent maybe an hour and a half on it and it's not great.
 
 
 ## Screenshots
